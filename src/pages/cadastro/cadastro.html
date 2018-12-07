@@ -1,0 +1,22 @@
+<ion-content class="background">
+	<ion-card>
+		<ion-card-header>
+			Cadastro
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+				<ion-item>
+					<ion-input [(ngModel)]="nome" type="text" placeholder="Nome"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input [(ngModel)]="tamanho" type="text" placeholder="Tamanho"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input [(ngModel)]="valor" type="number" placeholder="Valor"></ion-input>
+				</ion-item>
+				<button ion-button block outline color="light"(click)="createProduct()">Cadastrar</button>				
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+	
+</ion-content>
